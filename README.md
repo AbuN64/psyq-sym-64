@@ -11,4 +11,4 @@ psyq-sym --help
 
 Format reference: [psx_mnd_sym](https://github.com/mefistotelis/psx_mnd_sym).
 
-Provided as is. Public domain ([UNLICENSE](UNLICENSE)).
+Personal tool. Public domain ([UNLICENSE](UNLICENSE)).
