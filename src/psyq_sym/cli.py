@@ -45,7 +45,7 @@ def main() -> int:
         sys.stdout.write("\n")
         return 0
     except (OSError, ValueError, KeyError, DecodeError) as error:
-        sys.stderr.write(f"psyq-sym: {error}\n")
+        sys.stderr.write(f"abupsyq: {error}\n")
         return 1
 
 

@@ -1,4 +1,4 @@
-# psyq-sym-64
+# abu-psyq-64
 
 Reads the Psy-Q SYM debug records some N64 ROMs still carry and writes their functions, structs, typedefs and enums as JSON.
 
@@ -7,17 +7,17 @@ Reads the Psy-Q SYM debug records some N64 ROMs still carry and writes their fun
 ## Install
 
 ```sh
-pip install git+https://github.com/AbuN64/psyq-sym-64
+pip install git+https://github.com/AbuN64/abu-psyq-64
 ```
 
 ## Usage
 
 ```sh
-psyq-sym --config debug-symbols.toml --version us --locate
-psyq-sym --config debug-symbols.toml --version us > names.json
+abupsyq --config debug-symbols.toml --version us --locate
+abupsyq --config debug-symbols.toml --version us > names.json
 ```
 
-The first form finds the record runs in the ROM. Save their ranges in the config, then the second writes the names. Run `psyq-sym --help` for the rest.
+The first form finds the record runs in the ROM. Save their ranges in the config, then the second writes the names. Run `abupsyq --help` for the rest.
 
 The same package decodes the Psy-Q LNK object record stream some ROMs keep as overlay images (code chunks, patches, source-line records): `psyq_sym.lnk.locate(rom_slice)` returns where the stream starts and its records.
 
