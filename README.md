@@ -19,6 +19,8 @@ psyq-sym --config debug-symbols.toml --version us > names.json
 
 The first form finds the record runs in the ROM. Save their ranges in the config, then the second writes the names. Run `psyq-sym --help` for the rest.
 
+The same package decodes the Psy-Q LNK object record stream some ROMs keep as overlay images (code chunks, patches, source-line records): `psyq_sym.lnk.locate(rom_slice)` returns where the stream starts and its records.
+
 ## Development
 
 Run `PYTHONPATH=src python -m pytest tests`.
