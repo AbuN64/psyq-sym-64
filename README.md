@@ -1,4 +1,4 @@
-# abu-psyq-64
+# psyq-sym-64
 
 Reads the Psy-Q SYM debug records some N64 ROMs still carry and writes their functions, structs, typedefs and enums as JSON.
 
@@ -7,7 +7,7 @@ Reads the Psy-Q SYM debug records some N64 ROMs still carry and writes their fun
 ## Install
 
 ```sh
-pip install git+https://github.com/AbuN64/abu-psyq-64
+pip install git+https://github.com/AbuN64/psyq-sym-64
 ```
 
 ## Usage
